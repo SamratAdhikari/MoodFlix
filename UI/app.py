@@ -6,9 +6,6 @@ import pandas as pd
 
 
 # st.set_page_config(layout="wide")
-img_width = 50
-img_height = 80
-
 
 
 def recommend(book):
@@ -37,7 +34,7 @@ book_list = books['original_title'].values
 selected_book = st.selectbox("Enter The Book's Name", book_list)
 
 
-if st.button('Show Recommended Books'):
+if st.button('Show Recommendations'):
     st.divider()
     
     recommended_book_names, recommended_book_posters = recommend(selected_book)
