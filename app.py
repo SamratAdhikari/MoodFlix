@@ -57,4 +57,4 @@ if st.button('Show Recommendations'):
     with _:
         st.write("#")
 
-    st.divider()
+    
