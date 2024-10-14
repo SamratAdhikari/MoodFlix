@@ -27,10 +27,10 @@ with mid_col:
     st.subheader('BookPal')
 
 
-with open('books_list.pkl', 'rb') as f:
+with open('./books_list.pkl', 'rb') as f:
     books = pd.read_pickle(f)
 
-with open('book_similarity.pkl', 'rb') as f:
+with open('./book_similarity.pkl', 'rb') as f:
     similarity = pd.read_pickle(f)
 
 
